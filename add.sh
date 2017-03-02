@@ -1,6 +1,9 @@
 # Script to add a user to Linux
 #!/bin/bash
 
+woody="test"
+echo $woody
+
 username = "VAL618"
 passwd = "farnwang"
 
