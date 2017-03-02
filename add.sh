@@ -2,7 +2,12 @@
 #!/bin/bash
 
 username = "VAL618"
-useradd "$username"
-echo "farnwang" | passwd --stdin "$username"
-chage -d 0 "$username"
+passwd = "farnwang"
 
+echo "user is $username"
+echo ""password is $passwd
+
+sudo adduser "$username"
+
+echo $username:$passwd | chpasswd
+ 
