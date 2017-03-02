@@ -7,7 +7,7 @@ passwd="farnwang"
 echo "user is $username"
 echo ""password is $passwd
 
-sudo adduser "$username"
+sudo adduser --force-badname "$username"
 
 echo $username:$passwd | chpasswd
  
