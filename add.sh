@@ -8,5 +8,7 @@ echo "user is $username"
 echo ""password is $passwd
 
 sudo adduser --force-badname "$username"
-echo $passwd:$username | chpasswd
+
+echo $passwd | passwd --stdin $username
+
  
