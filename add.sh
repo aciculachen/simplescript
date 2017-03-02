@@ -1,8 +1,8 @@
+# Script to add a user to Linux
 #!/bin/bash
-# Script to add a user to Linux system
-user = VAL618
-passwd = farnwang
 
-adduser "$user"
-echo "$passwd" | passwd "$user" --stdin
+username = VAL618
+useradd "$username"
+echo "farnwang" | passwd --stdin "$username"
+chage -d 0 "$username"
 
