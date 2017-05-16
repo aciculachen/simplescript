@@ -1,6 +1,5 @@
 #!/bin/sh
 echo "This is test.sh "
-Node2 = ''
 
 echo $Node2
 
